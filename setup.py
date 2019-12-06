@@ -11,7 +11,7 @@ setuptools.setup(
     description="A package for accessing system informations",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    # url="https://github.com/pypa/sampleproject",
+    url="https://github.com/suhanna/System_info",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
