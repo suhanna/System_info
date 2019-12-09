@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="system_info", # Replace with your own username
-    version="0.0.1",
+    version="0.0.2",
     author="Suhanna CH",
     author_email="suhanna52@gmail.com",
     description="A package for accessing system informations",
