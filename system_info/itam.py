@@ -1,12 +1,8 @@
-# pyinstaller -F --hiddenimport=wmi itam.py : Windows
-from tabulate import tabulate
 import platform as p
 import cpuinfo, subprocess, shutil
 import os, re
 import socket as sk
-import multiprocessing
 
-# https://winaero.com/blog/how-to-see-ddr-memory-type-in-command-prompt-in-windows-10/
 RAM_Types = {
 	0 : "Unknown",
 	1 : "Other",
