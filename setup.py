@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="system_info",
-    version="2.0.0",
+    version="2.0.1",
     author="Suhanna CH",
     author_email="suhanna52@gmail.com",
     description="Package for finding system hardware specifications",
