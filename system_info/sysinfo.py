@@ -52,7 +52,7 @@ class SystemInfo(object):
 
         cinfo = cpuinfo.get_cpu_info()
         data = {}
-        data["Processor"] = cinfo['brand']
+        data["Processor"] = cinfo['brand_raw']
         data["CPU"] = cinfo['count']
 
         if os_info.platformName() == 'Linux':
