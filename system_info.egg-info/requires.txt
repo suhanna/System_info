@@ -1,2 +1,0 @@
-py-cpuinfo>=6.0.0
-psutil
