@@ -52,7 +52,7 @@ class SystemInfo(object):
 
         cinfo = cpuinfo.get_cpu_info()
         data = {}
-        data["Processor"] = cinfo['brand']
+        data["Processor"] = cinfo['brand_raw']
         data["CPU"] = cinfo['count']
 
         if os_info.platformName() == 'Linux':
@@ -142,7 +142,7 @@ class SystemInfo(object):
         try:
             data["Operating System"] = subprocess.check_output('systeminfo | findstr /B /C:"OS Name"',stderr=open(os.devnull, 'w'), shell=True).decode('utf-8').replace('  ','').partition('OS Name:')[2].strip(' \r\n')
         except Exception as error:
-            data["Operating System"] = None
+            data["Operating System"] = "{} {}".format(platform.system(), platform.release())
         try:
             data["Host Name"] = subprocess.check_output('ipconfig /all | findstr "Host Name"',stderr=open(os.devnull, 'w'), shell=True).decode('utf-8').partition(':')[2].strip(' ').strip('\r\n')
         except Exception as error:

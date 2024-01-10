@@ -1,3 +1,4 @@
+LICENSE
 README.md
 setup.py
 system_info/__init__.py
